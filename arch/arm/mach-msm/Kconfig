@@ -265,6 +265,7 @@ config ARCH_MSM8974
 	select MSM_AUDIO_QDSP6V2 if SND_SOC
 	select MSM_RPM_REGULATOR_SMD
 	select ARM_HAS_SG_CHAIN
+	select MSM_ULTRASOUND_B
 
 config ARCH_MPQ8092
 	bool "MPQ8092"
@@ -2350,6 +2351,16 @@ config MSM_ULTRASOUND_A
           ultrasound data paths between
           HW and services, calculating input events
           upon the  ultrasound data.
+
+config MSM_ULTRASOUND_B
+	bool "QDSP6V2 HW Ultrasound support"
+	help
+	  Enable HW Ultrasound support in QDSP6V2.
+	  QDSP6V2 can support HW encoder & decoder and
+	  ultrasound processing. It will enable
+	  ultrasound data paths between
+	  HW and services, calculating input events
+	  upon the ultrasound data.
 
 config MSM_RPC_VIBRATOR
 	bool "RPC based MSM Vibrator Support"
