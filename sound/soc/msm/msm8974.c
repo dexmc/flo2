@@ -431,7 +431,8 @@ static const struct snd_soc_dapm_route common_audio_map[] = {
 
 static const char *const spk_function[] = {"Off", "On"};
 static const char *const slim0_rx_ch_text[] = {"One", "Two"};
-static const char *const slim0_tx_ch_text[] = {"One", "Two", "Three", "Four"};
+static const char *const slim0_tx_ch_text[] = {"One", "Two", "Three", "Four",
+						"Five"};
 
 static const struct soc_enum msm_enum[] = {
 	SOC_ENUM_SINGLE_EXT(2, spk_function),
@@ -645,7 +646,7 @@ static int msm_slim_0_tx_be_hw_params_fixup(struct snd_soc_pcm_runtime *rtd,
 static const struct soc_enum msm_snd_enum[] = {
 	SOC_ENUM_SINGLE_EXT(2, spk_function),
 	SOC_ENUM_SINGLE_EXT(2, slim0_rx_ch_text),
-	SOC_ENUM_SINGLE_EXT(4, slim0_tx_ch_text),
+	SOC_ENUM_SINGLE_EXT(5, slim0_tx_ch_text),
 };
 
 static const struct snd_kcontrol_new msm_snd_controls[] = {
