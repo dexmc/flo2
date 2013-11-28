@@ -46,7 +46,8 @@
     defined(CONFIG_MACH_LITTLETON) ||\
     defined(CONFIG_MACH_ZYLONITE2) ||\
     defined(CONFIG_ARCH_VIPER) ||\
-    defined(CONFIG_MACH_STARGATE2)
+    defined(CONFIG_MACH_STARGATE2) ||\
+    defined(CONFIG_ARCH_VERSATILE)
 
 #include <asm/mach-types.h>
 
