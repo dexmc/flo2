@@ -1,14 +1,16 @@
 #!/bin/bash
 
-BASE_VER=".kangaroo.semaphore.flo.v000"
+BASE_VER="Semaphore_N7_1.5.8"
 VER=""
 KERNEL_VER=$BASE_VER$VER
 
-export LOCALVERSION=""`echo $KERNEL_VER`
+export LOCALVERSION="-"`echo $KERNEL_VER`
 export CROSS_COMPILE=${HOME}/Toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.7.4-2014.06/bin/arm-cortex_a15-linux-gnueabihf-
 
 export ARCH=arm
 export SUBARCH=arm
+export KBUILD_BUILD_USER=poondoge
+export KBUILD_BUILD_HOST="semaphore.gr"
 
 DATE_START=$(date +"%s")
 
