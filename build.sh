@@ -5,7 +5,7 @@ VER=""
 KERNEL_VER=$BASE_VER$VER
 
 export LOCALVERSION="-"`echo $KERNEL_VER`
-export CROSS_COMPILE=${HOME}/Toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.9.2-2014.09/bin/arm-cortex_a15-linux-gnueabihf-
+export CROSS_COMPILE=${HOME}/Toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.7.4-2014.06/bin/arm-cortex_a15-linux-gnueabihf-
 
 export ARCH=arm
 export SUBARCH=arm
