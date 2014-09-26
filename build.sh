@@ -1,10 +1,10 @@
 #!/bin/bash
 
-BASE_VER=".KANGAROO.flo.v000"
+BASE_VER=".kangaroo.semaphore.flo.v000"
 VER=""
 KERNEL_VER=$BASE_VER$VER
 
-export LOCALVERSION="-"`echo $KERNEL_VER`
+export LOCALVERSION=""`echo $KERNEL_VER`
 export CROSS_COMPILE=${HOME}/Toolchains/arm-cortex_a15-linux-gnueabihf-linaro_4.7.4-2014.06/bin/arm-cortex_a15-linux-gnueabihf-
 
 export ARCH=arm
