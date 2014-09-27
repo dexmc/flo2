@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASE_VER="Semaphore_N7_1.8.8"
+BASE_VER="Semaphore_N7_2.0.0"
 VER=""
 KERNEL_VER=$BASE_VER$VER
 
