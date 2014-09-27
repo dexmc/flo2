@@ -30,7 +30,7 @@
 
 struct delayed_work lid_hall_sensor_work;
 
-int enable_lid = 1;
+int enable_lid = 0;
 module_param( enable_lid, int, 0644 );
 
 /*
