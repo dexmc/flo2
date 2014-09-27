@@ -1689,7 +1689,7 @@ static void crypt_status(struct dm_target *ti, status_type_t type,
 			 char *result, unsigned int maxlen)
 {
 	struct crypt_config *cc = ti->private;
-	unsigned i sz = 0;
+	unsigned i, sz = 0;
 
 	switch (type) {
 	case STATUSTYPE_INFO:
@@ -1849,3 +1849,4 @@ module_exit(dm_crypt_exit);
 MODULE_AUTHOR("Christophe Saout <christophe@saout.de>");
 MODULE_DESCRIPTION(DM_NAME " target for transparent encryption / decryption");
 MODULE_LICENSE("GPL");
+
