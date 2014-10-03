@@ -20,7 +20,7 @@ echo "LOCALVERSION="$LOCALVERSION
 echo "CROSS_COMPILE="$CROSS_COMPILE
 echo "ARCH="$ARCH
 
-make -j1
+make -j3
 
 DATE_END=$(date +"%s")
 echo
